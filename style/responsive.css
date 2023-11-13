@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-  .header-nav nav a {
+  .header-nav > nav > span > a {
     font-size: 1.4rem;
     padding: 10px 7px;
   }
@@ -12,51 +12,13 @@
 }
 
 @media (max-width: 1024px) {
+  .header-flexbox {
+    padding: 15px 0;
+  }
   .header-nav {
-    position: absolute;
-    top: 100%;
-    background-color: var(--hellgrun);
-    left: 0;
-    right: 0;
-    z-index: 10;
-    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.3));
     display: none;
-    animation: hamburger 0.4s ease-in-out;
-  }
-  .header-nav-display {
-    display: block;
-    transform-origin: top;
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  @keyframes hamburger {
-    0% {
-      transform-origin: top;
-      transform: scaleY(0);
-      opacity: 0;
-    }
-    100% {
-      transform-origin: top;
-      transform: scaleY(1);
-      opacity: 1;
-    }
-  }
-  .header-nav nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 18px 0;
-  }
-  .header-nav nav a {
-    font-size: 1.6rem;
-    color: white;
-    padding: 6px 9px;
   }
 
-  .header-nav nav a:hover {
-    color: #006c39;
-  }
   .hamburger-btn {
     display: block;
     font-size: 2.7rem;
@@ -74,6 +36,9 @@
   }
   .football-animation {
     right: 13%;
+    top: 70%;
+    width: 80px;
+    height: 80px;
     transform: translateX(13%) rotate(1020deg);
   }
   @keyframes slideright {
@@ -86,6 +51,22 @@
       opacity: 1;
       right: 13%;
       transform: translateX(13%) rotate(1020deg);
+    }
+  }
+  .player-animation {
+    width: 240px;
+    height: 240px;
+    top: 55%;
+    transform: translate(-70%, -55%);
+  }
+  @keyframes slideTop {
+    0% {
+      top: 0;
+      transform: translate(-70%, -55%);
+    }
+    100% {
+      top: 55%;
+      transform: translate(-70%, -55%);
     }
   }
 
@@ -126,6 +107,15 @@
   }
 }
 @media (max-width: 786px) {
+  .hero-section {
+    height: 80vh;
+  }
+  .hero-section-slide {
+    height: 80vh !important;
+  }
+  .hero-section-slide > img {
+    height: 80vh !important;
+  }
   .hero-section-slide-content h2 {
     font-size: 5rem;
     line-height: 6.3rem;
@@ -140,26 +130,40 @@
     grid-column-gap: 0;
     grid-row-gap: 50px;
   }
+  .box {
+    width: 50px;
+    height: 150px;
+    bottom: 10px;
+  }
+  .ball {
+    width: 50px;
+    height: 50px;
+  }
+  @keyframes bounce {
+    50% {
+      transform: translateY(80px);
+    }
+  }
   .football-animation {
-    width: 70px;
-    height: 70px;
-    top: 72%;
+    width: 60px;
+    height: 60px;
+    top: 75%;
   }
 
   .player-animation {
-    width: 240px;
-    height: 280px;
-    top: 55%;
-    transform: translate(-75%, -55%);
+    width: 200px;
+    height: 240px;
+    top: 65%;
+    transform: translate(-70%, -65%);
   }
   @keyframes slideTop {
     0% {
       top: 0;
-      transform: translate(-75%, -55%);
+      transform: translate(-70%, -65%);
     }
     100% {
-      top: 55%;
-      transform: translate(-75%, -55%);
+      top: 65%;
+      transform: translate(-70%, -65%);
     }
   }
 
@@ -193,9 +197,7 @@
   .header-flexbox {
     padding: 12px 0;
   }
-  .header-nav nav a {
-    font-weight: 500;
-  }
+
   .hero-section {
     height: 75vh;
   }
@@ -216,9 +218,6 @@
 
   .hero-section-slide-content button a {
     font-size: 1.4rem;
-  }
-  .hero-section-slide-content {
-    margin-top: 80px;
   }
 
   .football-animation {

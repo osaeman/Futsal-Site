@@ -52,18 +52,35 @@
       <div class="header-flexbox container">
         <div class="header-logo">
           <a href="">
-            <span>Verein<b>Freunde</b></span>
             <img src="./assets/logo.jpg" alt="" />
+            <span>Verein<b>Freunde</b></span>
           </a>
         </div>
         <div class="header-nav">
           <nav>
-            <a href="">Startseite</a>
-            <a href="">Einnahmen steigern</a>
-            <a href=""> Ausgaben verringern</a>
-            <a href="">Dienstleistungen </a>
-            <a href=""> Bürokratie</a>
-            <a href="">Register</a>
+            <span> <a href="">Startseite</a></span>
+            <span class="sub-menu-link">
+              <a> Einnahmen steigern </a>
+              <div class="sub-menu-dropdown">
+                <ul>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">What We Offer</a>
+                  </li>
+                  <li><a href="">Our Process</a></li>
+                  <li><a href="">Pricing Plans</a></li>
+                  <li><a href="">Our Team</a></li>
+                  <li><a href="">Get in Touch</a></li>
+                  <li><a href="">404 Error Page</a></li>
+                </ul>
+              </div>
+            </span>
+            <span> <a href=""> Ausgaben verringern</a></span>
+            <span> <a href="">Dienstleistungen </a></span>
+            <span> <a href=""> Bürokratie</a></span>
+            <span> <a href="">Register</a></span>
           </nav>
         </div>
         <div class="hamburger-btn">
@@ -71,24 +88,66 @@
         </div>
       </div>
     </header>
+
+    <!-- ------Mobile Header Slider------ -->
+    <div class="mobile-nav-slider">
+      <div class="mobile-nav-slider-top">
+        <i class="fal fa-window-close slider-close-btn"></i>
+      </div>
+      <div class="mobile-nav-menu">
+        <nav>
+          <span> <a href="">Startseite</a></span>
+
+          <span class="mobile-nav-link">
+            <a>
+              Einnahmen steigern
+              <span class="mobile-nav-link-i"><i class="far fa-plus"></i></span>
+            </a>
+            <div class="mobile-nav-dropdown">
+              <ul>
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">What We Offer</a>
+                </li>
+                <li><a href="">Our Process</a></li>
+                <li><a href="">Pricing Plans</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Get in Touch</a></li>
+                <li><a href="">404 Error Page</a></li>
+              </ul>
+            </div>
+          </span>
+
+          <span> <a href=""> Ausgaben verringern</a></span>
+          <span> <a href="">Dienstleistungen </a></span>
+          <span> <a href=""> Bürokratie</a></span>
+          <span> <a href="">Register</a></span>
+        </nav>
+      </div>
+    </div>
+    <!---------------- Hero Section--------------->
     <section class="hero-section">
       <div class="swiper mySwiperHero">
         <div class="swiper-wrapper">
           <div class="swiper-slide hero-section-slide">
             <img src="./assets/10.jpg" alt="" />
             <div class="hero-section-slide-content-container">
-              <div class="hero-section-slide-content container">
-                <h2>
-                  Eat Clean and Green.
-                  <br />
-                  <span>Eat Organic</span>
-                </h2>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum
-                </p>
-                <button><a href="">View Features</a></button>
+              <div class="hero-section-slide-content-inner-container">
+                <div class="hero-section-slide-content container">
+                  <h2>
+                    Eat Clean and Green.
+                    <br />
+                    <span>Eat Organic</span>
+                  </h2>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum
+                  </p>
+                  <button><a href="">View Features</a></button>
+                </div>
               </div>
             </div>
             <div class="football-animation">
@@ -96,6 +155,15 @@
             </div>
             <div class="player-animation">
               <img src="./assets/player animation.png" alt="" />
+            </div>
+            <!-- <div class="goal-animation">
+              <img src="./assets/goal post.png" alt="" />
+            </div> -->
+            <div class="box">
+              <div class="shadow"></div>
+              <div class="gravity">
+                <div class="ball"></div>
+              </div>
             </div>
           </div>
           <div class="swiper-slide hero-section-slide">
