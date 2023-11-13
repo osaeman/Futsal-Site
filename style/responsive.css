@@ -9,9 +9,6 @@
   .header-logo a img {
     width: 40px;
   }
-}
-
-@media (max-width: 1024px) {
   .header-flexbox {
     padding: 15px 0;
   }
@@ -24,6 +21,9 @@
     font-size: 2.7rem;
     cursor: pointer;
   }
+}
+
+@media (max-width: 1024px) {
   .hero-section-slide-content h2 {
     font-size: 6rem;
     line-height: 7rem;
